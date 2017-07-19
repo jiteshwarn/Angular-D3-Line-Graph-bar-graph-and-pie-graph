@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<link rel = "stylesheet" type = "text/css" href = "./css/graph.css" />
+</head>
+<body data-ng-app="d3App">
+<div ng-controller="graphController">
+    <!--Bar Chart-->
+    <div class="barchart" style="position:relative;margin-bottom: 60px">
+        <h2 style="position:absolute;left:40%;">Error in Build Requests</h2>
+        <svg class="bar-chart"></svg>
+    </div>
+
+    <!--Line Chart-->
+    <div class="linechart" style="position:relative;margin-bottom: 60px">
+         <h2 style="position:absolute;left:40%;">Number of Build Requests</h2>
+    </div>
+    
+    <!--Pie Chart-->
+    <div class="pie-chart" style="position:relative">
+        <h2 style="position:absolute;left:38%;top:-40px">Complete V/S Component Builds</h2>
+    </div>
+<!--<button ng-click="draw()">DRAW</button>-->
+</div>
+</body>
+
+<!--library-->
+<script src="./library/d3.js"></script>
+<script src="./library/angular.js"></script>
+
+<!--controllers-->
+<script src="./js/controllers/graph.ctrl.js"></script>
+
+<!--services-->
+<script src="./js/services/d3graph.srv.js"></script>
+
+<!--<script src="./js/app.js"></script>-->
+</html>

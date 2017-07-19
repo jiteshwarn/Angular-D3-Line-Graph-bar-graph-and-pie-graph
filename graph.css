@@ -1,0 +1,63 @@
+
+ /*Line Chart*/
+body { font: 14px Arial;}
+
+path { 
+  stroke: steelblue;
+	stroke-width: 6;
+	fill: none;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: grey;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+}
+
+/*Bar chart*/
+svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.bar-chart rect {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.bar-chart text {
+  fill: black;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+/*
+Pie Charts
+*/
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+  stroke-width: 0;
+}
